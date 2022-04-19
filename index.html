@@ -1,18 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Scss-bem-starter</title>
+    <title>Podcast</title>
 </head>
+
 <body>
-    <!--HEAD-->
-    <header></header>
     <!--MAIN-->
-    <main></main>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <!--HEADER-->
+                <header class="site-header">
+                    <a class="site-header__logo-link" href="./index.html" target="_blank">
+                        <img class="site-header__logo" src="./images/Logo.svg" alt="Podcast logo" width="197"
+                            height="49">
+                    </a>
+                    <!--NAVBAR-->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a class="navbar__item-link" href="#">Home</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__item-link" href="#">Episodes</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__item-link" href="#">About</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__item-link" href="#">Shop</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__item-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="site-header__link" href="#">Sign up</a>
+                </header>
+                <!--HERO-LEFT-->
+                <div class="hero__main">
+                    <div class="hero__left">
+                        <p class="hero__author">MIKE LEWIS</p>
+                        <p class="hero__author">PERSONAL BRANDING</p>
+                        <h1 class="hero__heading">Everyday is Chance to Learn New Things</h1>
+                        <p class="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                            laoreet in est tortor quam pretium tellus pretium sit.</p>
+
+                        <div class="hero__bottom-link-wrapper">
+                            <a class="hero__bottom-link-listening" href="">Start Listening</a>
+                            <a class="hero__bottom-link-episodes" href="">See all Episodes</a>
+                        </div>
+
+                        <p class="hero__find-us">ALSO FIND US ON :</p>
+
+                        <ul class="hero__social-media-list">
+                            <li class="hero__social-media-item">
+                                <a class="hero__social-media-link" href="#">
+                                    <img class="hero__social-media-image" src="./images/image7@2x.svg"
+                                        alt="Spotify icon image" width="85" height="26">
+                                </a>
+                            </li>
+                            <li class="hero__social-media-item">
+                                <a class="hero__social-media-link" href="">
+                                    <img class="hero__social-media-image" src="./images/apple.svg"
+                                        alt="Apple podcast icon" width="129" height="31">
+                                </a>
+                            </li>
+                            <li class="hero__social-media-item">
+                                <a class="hero__social-media-link" href="">
+                                    <img class="hero__social-media-image" src="./images/youtube.svg" alt="Youtube icon"
+                                        width="91" height="20">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <img class="hero__right-image" src="./images/Hero img.png" alt="Hero image" width="609"
+                        height="603">
+                </div>
+            </div>
+        </section>
+    </main>
     <!--FOOTER-->
     <footer></footer>
 </body>
+
 </html>
