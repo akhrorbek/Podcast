@@ -3,12 +3,14 @@
 .hero {
     background-image: url("../images/Herobg.png");
     background-repeat: no-repeat;
-    background-position:50%;
+    background-size: cover;
+    background-position: 50%;
     padding-bottom: 155px;
 
     ///HERO-MAIN-PART////
-        &__main {
-            display: flex;
+        &__left {
+            width: 650px;
+            padding-bottom: 20px;
         }
         &__author-wrapper {
             display: flex;

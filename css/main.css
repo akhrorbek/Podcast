@@ -411,6 +411,18 @@ img {
   padding: 0 20px;
 }
 
+.hero-container {
+  background-image: url("../images/Heroimg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 350px) bottom;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: url(../images/Heroimg@2x.png);
+  }
+}
+
 .site-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,7 +431,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 35px;
-  padding-bottom: 77px;
+  padding-bottom: 120px;
 }
 
 .site-header__logo-link {
@@ -495,14 +507,14 @@ img {
 .hero {
   background-image: url("../images/Herobg.png");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: 50%;
   padding-bottom: 155px;
 }
 
-.hero__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.hero__left {
+  width: 650px;
+  padding-bottom: 20px;
 }
 
 .hero__author-wrapper {
