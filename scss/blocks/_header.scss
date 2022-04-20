@@ -5,6 +5,16 @@
     padding-top: 35px;
     padding-bottom: 77px;
 
+    &__logo-link {
+        text-decoration: none;
+        &:hover {
+            opacity: 0.8;
+        }
+        &:active {
+            opacity: 0.7;
+        }
+    }
+
     &__link {
         margin-left: 53px;
         padding: 0;

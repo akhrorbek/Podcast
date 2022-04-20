@@ -1,17 +1,51 @@
 //BU YERDA SYTIMIZNI HERO QISMIGA ISHLOV BERILADI
 
 .hero {
-    background-image: url("../../images/Herobg.png");
+    background-image: url("../images/Herobg.png");
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position:50%;
     padding-bottom: 155px;
 
+    ///HERO-MAIN-PART////
         &__main {
             display: flex;
         }
-        &__author {
+        &__author-wrapper {
+            display: flex;
+            align-items: center;
             margin: 0;
             padding: 0;
+            margin-bottom: 19px;
+        }
+        &__author-name {
+            margin: 0;
+            padding: 0;
+        }
+        &__author-surname {
+            margin: 0;
+            padding: 0;
+            margin-left: 15px;
+        }
+        &__author-name::before {
+            content: "MIKE LEWIS";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0.15em;
+            color: #FFFFFF;
+        }
+        &__author-divider {
+            margin: 0;
+            padding: 0;
+            margin-left: 15px;
+            background-color: #FFFFFF;
+            width: 4px;
+            height: 4px;
+            border-radius: 100%;
+        }
+        &__author-surname::after {
+            content: "PERSONAL BRANDING";
             font-style: normal;
             font-weight: 400;
             font-size: 18px;
@@ -44,6 +78,7 @@
 
         &__bottom-link-wrapper {
             display: flex;
+            align-items: center;
             margin-bottom: 63px;
         }
         &__bottom-link-listening {
@@ -56,6 +91,12 @@
             color: #FFFFFF;
             background: linear-gradient(265.37deg, #9224D6 -49.74%, #BD87DE 116.53%);
             border-radius: 30px;
+            &:hover {
+                opacity:0.8;
+            }
+            &:active {
+                opacity: 0.7;
+            }
         }
         &__bottom-link-episodes {
             margin-left: 8px;
@@ -69,6 +110,13 @@
             color: #FFFFFF;
             border: 1px solid #FFFFFF;
             border-radius: 30px;
+
+            &:hover {
+                opacity:0.8;
+            }
+            &:active {
+                opacity: 0.7;
+            }
         }
         &__find-us {
             margin: 0;
@@ -83,6 +131,7 @@
         }
         &__social-media-list {
             display: flex;
+            align-items: center;
             margin: 0;
             padding: 0;
             list-style: none;
@@ -90,7 +139,25 @@
         &__social-media-item + &__social-media-item {
             margin-left: 26px;
         }
+        &__social-media-item:hover {
+            opacity: 0.8;
+            &:active {
+                opacity: 0.7;
+            }
+        }
         &__social-media-link {
             text-decoration: none;
         }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+.hero {
+    background-image: url(../images/Herobg@2x.png);
+}
 }

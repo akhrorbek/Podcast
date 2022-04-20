@@ -341,6 +341,24 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.ttf"), url("../fonts/Poppins-Medium.woff"), url("../fonts/Poppins-Medium.woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf"), url("../fonts/Poppins-Regular.woff"), url("../fonts/Poppins-Regular.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.ttf"), url("../fonts/Poppins-SemiBold.woff"), url("../fonts/Poppins-SemiBold.woff2");
+  font-weight: 600;
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -364,7 +382,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "Poppins";
   font-size: 16px;
   line-height: 1.5;
 }
@@ -402,6 +420,18 @@ img {
           align-items: center;
   padding-top: 35px;
   padding-bottom: 77px;
+}
+
+.site-header__logo-link {
+  text-decoration: none;
+}
+
+.site-header__logo-link:hover {
+  opacity: 0.8;
+}
+
+.site-header__logo-link:active {
+  opacity: 0.7;
 }
 
 .site-header__link {
@@ -443,6 +473,14 @@ img {
   margin-left: 50px;
 }
 
+.navbar__item:hover {
+  opacity: 0.8;
+}
+
+.navbar__item:hover:active {
+  opacity: 0.7;
+}
+
 .navbar__item-link {
   text-decoration: none;
   font-style: normal;
@@ -455,7 +493,7 @@ img {
 }
 
 .hero {
-  background-image: url("../../images/Herobg.png");
+  background-image: url("../images/Herobg.png");
   background-repeat: no-repeat;
   background-position: 50%;
   padding-bottom: 155px;
@@ -467,9 +505,51 @@ img {
   display: flex;
 }
 
-.hero__author {
+.hero__author-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
+  margin-bottom: 19px;
+}
+
+.hero__author-name {
+  margin: 0;
+  padding: 0;
+}
+
+.hero__author-surname {
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.hero__author-name::before {
+  content: "MIKE LEWIS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+}
+
+.hero__author-divider {
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+  background-color: #FFFFFF;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+}
+
+.hero__author-surname::after {
+  content: "PERSONAL BRANDING";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -506,6 +586,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 63px;
 }
 
@@ -521,6 +604,14 @@ img {
   border-radius: 30px;
 }
 
+.hero__bottom-link-listening:hover {
+  opacity: 0.8;
+}
+
+.hero__bottom-link-listening:active {
+  opacity: 0.7;
+}
+
 .hero__bottom-link-episodes {
   margin-left: 8px;
   padding: 13px 30px;
@@ -533,6 +624,14 @@ img {
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 30px;
+}
+
+.hero__bottom-link-episodes:hover {
+  opacity: 0.8;
+}
+
+.hero__bottom-link-episodes:active {
+  opacity: 0.7;
 }
 
 .hero__find-us {
@@ -551,6 +650,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -560,7 +662,21 @@ img {
   margin-left: 26px;
 }
 
+.hero__social-media-item:hover {
+  opacity: 0.8;
+}
+
+.hero__social-media-item:hover:active {
+  opacity: 0.7;
+}
+
 .hero__social-media-link {
   text-decoration: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/Herobg@2x.png);
+  }
 }
 /*# sourceMappingURL=main.css.map */

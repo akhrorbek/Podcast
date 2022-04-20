@@ -1,1 +1,22 @@
 //BU YERDA BIZNING FONTLAR YASHAYDI
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Medium.ttf"),
+         url("../fonts/Poppins-Medium.woff"),
+         url("../fonts/Poppins-Medium.woff2");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf"),
+         url("../fonts/Poppins-Regular.woff"),
+         url("../fonts/Poppins-Regular.woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-SemiBold.ttf"),
+         url("../fonts/Poppins-SemiBold.woff"),
+         url("../fonts/Poppins-SemiBold.woff2");
+    font-weight: 600;
+}
